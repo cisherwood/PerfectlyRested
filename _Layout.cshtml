@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PerfectlyRested</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="text-center">Shackboys.com</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 perfectlyRested">
+                    <h1 class="display-4 text-center">
+                        
+                        <img src="~/images/perfectly_Rested_logo.jpg" />
+                    </h1>
+                </div>
+            </div>
+
+
+
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+
+            <a asp-page="Shop" class="col-sm text-center">
+                SHOP
+            </a>
+            <a asp-page="Photos" class="col-sm text-center">
+                PHOTOS
+            </a>
+            <a asp-page="Index" class="col-sm text-center">
+                HOME
+            </a>
+            <a asp-page="Film" class="col-sm text-center">
+                FILM
+            </a>
+            <a asp-page="Music" class="col-sm text-center">
+                MUSIC
+            </a>
+
+
+
+
+
+        </div>
+
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - Shackboys  
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
